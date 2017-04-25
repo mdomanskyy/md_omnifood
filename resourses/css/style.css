@@ -12,8 +12,15 @@ orange color e67e22
     padding: 0;
     box-sizing: border-box;
 }
-
-html, input, textarea, select, option {
+html,
+body {
+    overflow-x: hidden;
+}
+html,
+input,
+textarea,
+select,
+option {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Aril', sans-serif;
@@ -192,9 +199,8 @@ input[type=submit]:active {
 
 header {
     background-size: cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg) center;
     height: 100vh;
-    background-attachment: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg) fixed center;
 }
 
 .hero-text-box {
@@ -370,10 +376,9 @@ a:focus {
 /*-----------------------------------------------*/
 
 .section-testimonials {
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("img/back-customers.jpg");
     background-size: cover;
     color: #fff;
-    background-attachment: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/back-customers.jpg") fixed;
 }
 
 blockquote {
@@ -488,7 +493,7 @@ textarea {
 }
 
 input[type=checkbox] {
-    margin: 10px 5px 10px 0px;
+    margin: 10px 5px 10px 0;
 }
 
 *:focus {
